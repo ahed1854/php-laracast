@@ -4,18 +4,33 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 
 <body>
+    <?php
+
+    $name = "Dark Matter";
+    $read = true;
+
+    if ($read) {
+        $message = "You have read $name";
+    } else {
+        $message = "You have NOT read $name";
+    }
+
+    ?>
+
     <h1>
-        <?php
-
-        $greetings = "Hello";
-
-        echo $greetings . "Everybody !";
-        echo "$greetings Everybody !";
-
-        ?>
+        <?= $message ?>
     </h1>
 </body>
 
