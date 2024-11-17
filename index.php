@@ -2,15 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Document</title>
 </head>
 
 <body>
-    <?php
-    echo "Hello, World";
+    <h1>
+        <?php
 
-    ?>
+        $greetings = "Hello";
+
+        echo $greetings . "Everybody !";
+        echo "$greetings Everybody !";
+
+        ?>
+    </h1>
 </body>
 
 </html>
