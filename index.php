@@ -13,25 +13,35 @@
     <?php
 
     $books = [
-        "Do Androids dream of Electric Sheeps",
-        "The Langoliers",
-        "Hail Marry"
+        [
+
+            "name" => "Do Androids dream of Electric Sheeps",
+            "author" => "Philip K. Dick",
+            "purchaseUrl" => "https://example.com"
+        ],
+        [
+
+            "name" => "The Langoliers",
+            "author" => "Andy Weir",
+            "purchaseUrl" => "https://example.com"
+        ],
+        [
+
+            "name" => "Project Hail Marry",
+            "author" => "Andy Weir",
+            "purchaseUrl" => "https://example.com"
+        ],
     ];
 
     ?>
 
     <ul>
-        <?php
-        foreach ($books as $book) {
-            // echo "<li>" . $book . "</li>";
-            echo "<li>$book</li>";
-        }
-        ?>
-
-        <br />
-        <!-- An other way of using conditionals or loops is this: -->
         <?php foreach ($books as $book): ?>
-            <li><?= $book ?></li>
+            <li>
+                <a href="<?= $book["purchaseUrl"] ?>">
+                    <?= $book["name"] ?>
+                </a>
+            </li>
         <?php endforeach; ?>
     </ul>
 
