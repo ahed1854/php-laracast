@@ -9,8 +9,8 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a href="/websites/demo/" class="<?= urlIs("/websites/demo/") ? "bg-gray-900 text-white" : "text-gray-300"; ?> hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
-                        <a href="/websites/demo/about.php" class="<?= urlIs("/websites/demo/about.php") ? "bg-gray-900 text-white" : "text-gray-300"; ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                        <a href="/websites/demo/contact.php" class="<?= urlIs("/websites/demo/contact.php") ? "bg-gray-900 text-white" : "text-gray-300"; ?> text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="/websites/demo/about" class="<?= urlIs("/websites/demo/about") ? "bg-gray-900 text-white" : "text-gray-300"; ?> text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/websites/demo/contact" class="<?= urlIs("/websites/demo/contact") ? "bg-gray-900 text-white" : "text-gray-300"; ?> text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
             </div>
